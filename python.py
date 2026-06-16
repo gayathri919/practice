@@ -1,19 +1,29 @@
-Simple Python program
+Simple Python program with enhancements
 Print a message
-print("Hello, Python learner!")
+print("Welcome to Python practice!")
 
 Do some math
-a = 5
-b = 3
+a = 10
+b = 4
 sum_result = a + b
-print("The sum of", a, "and", b, "is:", sum_result)
+product_result = a * b
+print(f"The sum of {a} and {b} is: {sum_result}")
+print(f"The product of {a} and {b} is: {product_result}")
 
-Use a loop
-for i in range(1, 6):
-    print("Counting:", i)
+Use a loop with a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print("I like", fruit)
 
-Define a function
-def greet(name):
-    return "Hello, " + name + "!"
+Define a function with a conditional
+def greet(name, age):
+    if age < 18:
+        return f"Hello, {name}! You're still young."
+    else:
+        return f"Hello, {name}! You're an adult now."
 
-print(greet("Gayathri"))
+print(greet("Nagam", 20))
+
+Ask for user input
+user_name = input("Enter your name: ")
+print("Nice to meet you,", user_name)
